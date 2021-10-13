@@ -1,0 +1,39 @@
+  @media (max-width: $desktopLarge) {
+    .navbar-collapse{
+      .region-navigation-collapsible{
+        section{
+          .field--type-fontawesome-icon{
+            .field--item{
+              .fontawesome-icons{
+                //display: none;
+              }
+            }
+          }
+        }
+        .block-search-form-block{
+          form{
+            .form-type-search{
+              .input-group{
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: $desktop) {
+
+  }
+  @media (max-width: $table) {
+    .boy-next-door .header-text {
+      width: 350px;
+      height: 146px;
+      position: absolute;
+      bottom: 36%;
+      left: 14%;
+    }
+  }
+  @media (max-width: $mobile) {
+
+  }
