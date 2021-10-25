@@ -2,11 +2,12 @@
 .navbar-wrapper{
   z-index: 1;
   background-color: #ffffff;
-  max-width: 1170px;
+  max-width: 1230px;
   margin: 0 auto;
   width: 100%;
   box-shadow: 0px 5px 5px -4px rgba(34, 60, 80, 0.6);
   height: 112px;
+  display: flex;
 }
 .navbar{
   display: flex;
@@ -24,25 +25,33 @@
 }
 
 .navbar-header{
-
   width: 230px;
   height: 113px;
   .region-navigation{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
     height: 100%;
-    a{
+    background-color: #343444;
+    .navbar-brand{
+      display: block;
+      width: 160px;
+      font-size: 30px;
+      color: #6e9bca;
+    }
+    p.navbar-text{
+      display: block;
+      width: 162px;
+      color: #8a8a92;
+      font-size: 13px;
       margin: 0;
-      padding-right: 0;
-      width: 100%;
-      height: 113px;
-      img{
-        width: 100%;
-        height: 113px;
-        margin: auto 0;
-      }
+      text-align: center;
+    }
     }
   }
-}
+
 .navbar-collapse{
   width: 100%;
   padding: 0;
@@ -51,16 +60,48 @@
   .region-navigation-collapsible{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: auto 10px;
-    nav, navbar-nav{
-    li{
-      a{
+    justify-content: space-around;
+    margin: 30px 10px;
+    .nav, .navbar-nav{
+      font-size: 12px;
+      li{
+      text-transform: uppercase;
+        a{
         padding: 0;
         color: black;
-        margin: $gutter/2;
+        margin: 10px;
+      }
+        a:hover::after{
+        content: " ";
+        background-color: #6e9bca;
+        display: block;
+        position: absolute;
+        margin-top: 45px;
+        height: 7px;
+        width: 100%;
+
       }
     }
+      .first{
+        background-image: url("../images/Homepage-menu.png");
+        width: 28px;
+        height: 28px;
+        position: relative;
+        bottom: 5px;
+        margin-right: 4px;
+        a{
+          opacity: 0;
+        }
+        a:hover::after{
+          content: " ";
+          background-color: #6e9bca;
+          display: block;
+          position: absolute;
+          margin-top: 45px;
+          height: 7px;
+          width: 100%;
+        }
+      }
     }
     section{
       .field--type-fontawesome-icon{
@@ -71,7 +112,7 @@
             .fontawesome-icon{
               height: 24px;
               width: 24px;
-              margin-right: 12px;
+              margin-right: 6px;
               svg {
                 height: 100%;
                 width: 100%;
@@ -101,6 +142,8 @@
               button{
                 background-color: #ffffff;
                 border-radius: 0;
+                border-color: #ccc;
+                height: 34px;
                 .glyphicon-search{
                   color: #cccccc;
                 }

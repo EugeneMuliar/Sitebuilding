@@ -1,0 +1,51 @@
+footer{
+  background-color: #373645;
+  .region-footer{
+    max-width: 1230px;
+    margin: 10px auto;
+    a.navbar-brand{
+      display: block;
+      width: 160px;
+      font-size: 30px;
+    }
+    p.navbar-text{
+      display: block;
+      float: none;
+      width: 162px;
+      color: #8a8a92;
+      font-size: 13px;
+    }
+    #block-netlinks{
+      display: flex;
+      float: right;
+      margin-top: -50px;
+      margin-right: 15px;
+      .field--type-link{
+        margin-right: 10px;
+        a{
+          display: block;
+          width: 21px;
+          height: 21px;
+          svg{
+            opacity: 0;
+          }
+        }
+      }
+      .field--name-field-fb-link{
+        a{
+          background-image: url("../images/fb.png");
+        }
+      }
+      .field--name-field-tw-link{
+        a{
+          background-image: url("../images/twit.png");
+        }
+      }
+      .field--name-field-li-link{
+        a{
+          background-image: url("../images/in.png");
+        }
+      }
+    }
+  }
+}
