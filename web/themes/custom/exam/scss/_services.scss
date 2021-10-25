@@ -1,0 +1,47 @@
+article[about="/services"]{
+  .view-services-block{
+    .view-content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      .views-row{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        .views-field-field-service-image{
+          max-height: 117px;
+          height: 100%;
+          width: 43%;
+          max-width: 200px;
+        }
+        .views-field-name{
+            font-size: 20px;
+            margin: 0 10px;
+            width: 170px;
+        }
+        .views-field-view-taxonomy-term{
+          span{
+            background-color: #6e9bca;
+            padding: 6px 10px;
+            a{
+              color: #FFF;
+            }
+            a:hover{
+              color: #FFF;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $table) {
+  article[about="/services"]{
+    .view-services-block{
+      .view-content{
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

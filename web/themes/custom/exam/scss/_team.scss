@@ -1,0 +1,16 @@
+article[about="/team"]{
+  .view-team-block{
+    .view-content{
+      grid-template-columns: 1fr 1fr;
+      .views-row{
+        .views-field-field-worker-position {
+          margin-left: 57px;
+        }
+        .views-field-field-name-surname span {
+          height: 21px;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,37 @@
+article[about="/news"]{
+  .view-news{
+    .view-content{
+      .views-row{
+        margin: 10px 0;
+        max-width: 700px;
+        .views-field-title{
+          font-size: 30px;
+        }
+        .views-field-field-name-surname{
+          font-size: 14px;
+          float: left;
+          margin: 10px 0;
+          margin-right: 10px;
+        }
+        .views-field-field-news-data{
+          margin: 10px 0;
+        }
+        .views-field-body{
+          max-width: 700px;
+          font-size: 18px;
+        }
+        .views-field-view-node{
+          text-align: end;
+          span{
+            padding: 10px;
+            background-color: #373645;
+            margin: 10px 10px 20px;
+            a{
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

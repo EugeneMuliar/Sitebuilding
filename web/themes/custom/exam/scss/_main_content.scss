@@ -11,9 +11,6 @@
             display: flex;
             justify-content: space-between;
             text-transform: uppercase;
-            em{
-              display: none;
-            }
             div{
               em{
                 display: inline;
@@ -28,7 +25,6 @@
               color: #d7d7d7;
             }
             .views-field-view-node{
-              em{
                 span{
                   a{
                     position: relative;
@@ -37,7 +33,6 @@
                     padding: 10px;
                     color: white;
                   }
-                }
               }
             }
 
@@ -61,7 +56,6 @@
         }
       }
       .content{
-        em{
           .block-views{
             .block-title{
               text-align: center;
@@ -96,52 +90,61 @@
             .view-services-block{
               .view-content{
                 .views-view-grid{
-                  .views-col{
-
-                    width: 25%;
-                    max-width: 255px;
+                  .views-row{
                     display: grid;
-                    justify-content: center;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    margin-bottom: 80px;
                     justify-items: center;
-                    text-transform: uppercase;
-                    margin: 0 19px 0;
+                    .views-col{
+                      width: 100%;
+                      max-width: 255px;
+                      display: grid;
+                      justify-items: center;
+                      text-transform: uppercase;
+                      margin: 0;
 
-                    .views-field-field-service-image{
-                      margin: 20px;
-                      .field-content{
-                        img{
-                          display: block;
-                          max-height: 117px;
-                          height: 100%;
+                      .views-field-field-service-image{
+                        margin: 20px;
+                        .field-content{
+                          img{
+                            display: block;
+                            max-height: 117px;
+                            height: 100%;
+                          }
+                        }
+                      }
+                      .views-field-name{
+                        font-size: 22px;
+                        text-align: center;
+                      }
+                      .views-field-description__value{
+                        font-size: 12px;
+                        text-align: center;
+                        color: #d7d7d7;
+                        margin: 16px 0;
+
+                      }
+                      .views-field-view-taxonomy-term{
+                        background-color: #6e9bca;
+                        padding: 6px 10px;;
+                        a{
+                          color: #ffffff;
                         }
                       }
                     }
-                    .views-field-name{
-                      font-size: 22px;
-                      text-align: center;
-                    }
-                    .views-field-description__value{
-                      font-size: 12px;
-                      text-align: center;
-                      color: #d7d7d7;
-                      margin: 16px 0;
-
-                    }
-                    .views-field-view-taxonomy-term{
-                      background-color: #6e9bca;
-                      padding: 6px 10px;;
-                      a{
-                        color: #ffffff;
-                      }
-                    }
+                  }
+                  .views-row::before,.views-row::after{
+                    display: none;
                   }
                 }
+
               }
             }
             .view-projects-block{
               .view-content{
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr 1fr;
+                    justify-items: center;
                     .views-row{
                       border-bottom: black solid 2px;
                       margin: 5px;
@@ -149,6 +152,7 @@
                       justify-content: center;
                       justify-items: center;
                       text-transform: uppercase;
+                      text-align: center;
                       .views-field-field-image{
                         max-width: 285px;
                         max-height: 285px;
@@ -239,8 +243,10 @@
                   }
                   .views-field-field-name-surname{
                     font-size: 18px;
-                    display: block;
-                    height: 40px;
+                    span{
+                      display: block;
+                      height: 40px;
+                    }
                   }
                   .views-field-field-worker-position{
                     font-size: 12px;
@@ -300,9 +306,6 @@
                   }
                 }
               }
-
-            }
-
 
             }
 
