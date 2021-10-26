@@ -12,7 +12,7 @@ article[about="/services"]{
           max-height: 117px;
           height: 100%;
           width: 43%;
-          max-width: 200px;
+          max-width: 150px;
         }
         .views-field-name{
             font-size: 20px;
@@ -20,9 +20,11 @@ article[about="/services"]{
             width: 170px;
         }
         .views-field-view-taxonomy-term{
+          width: 140px;
           span{
             background-color: #6e9bca;
-            padding: 6px 10px;
+            padding: 6px;
+            font-size: 12px;
             a{
               color: #FFF;
             }

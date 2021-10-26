@@ -8099,7 +8099,7 @@ article[about="/projects"] .block-views-blockall-projects-block-block-1 .view-al
 }
 
 @media (max-width: 767px) {
-  .block-views-blockall-projects-block-block-1 .view-all-projects-block .view-content {
+  article[about="/projects"] .block-views-blockall-projects-block-block-1 .view-all-projects-block .view-content {
     grid-template-columns: 1fr;
   }
 }
@@ -8117,16 +8117,20 @@ article[about="/services"] .view-services-block .view-content .views-row .views-
   max-height: 117px;
   height: 100%;
   width: 43%;
-  max-width: 200px;
+  max-width: 150px;
 }
 article[about="/services"] .view-services-block .view-content .views-row .views-field-name {
   font-size: 20px;
   margin: 0 10px;
   width: 170px;
 }
+article[about="/services"] .view-services-block .view-content .views-row .views-field-view-taxonomy-term {
+  width: 140px;
+}
 article[about="/services"] .view-services-block .view-content .views-row .views-field-view-taxonomy-term span {
   background-color: #6e9bca;
-  padding: 6px 10px;
+  padding: 6px;
+  font-size: 12px;
 }
 article[about="/services"] .view-services-block .view-content .views-row .views-field-view-taxonomy-term span a {
   color: #FFF;
@@ -8172,6 +8176,35 @@ article[about="/news"] .view-news .view-content .views-row .views-field-view-nod
   color: #fff;
 }
 
+article[about="/clients"] .view-clients-home-block .view-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: left;
+  padding: 0 36px;
+}
+article[about="/clients"] .view-clients-home-block .view-content .views-row {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+article[about="/clients"] .view-clients-home-block .view-content .views-row .views-field-field-clients-image {
+  width: 100px;
+  height: 100px;
+}
+article[about="/clients"] .view-clients-home-block .view-content .views-row .views-field-field-clients-image img {
+  width: 100%;
+}
+article[about="/clients"] .view-clients-home-block .view-content .views-row .views-field-title {
+  margin: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 570px) {
+  article[about="/clients"] .view-clients-home-block .view-content {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 1160px) {
   .navbar-collapse .region-navigation-collapsible .block-search-form-block {
     width: 160px;
